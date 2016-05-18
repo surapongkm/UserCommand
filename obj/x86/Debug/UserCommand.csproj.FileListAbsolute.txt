@@ -1,0 +1,10 @@
+F:\Project\Pong\UserCommand\bin\Debug\UserCommand.exe
+F:\Project\Pong\UserCommand\bin\Debug\UserCommand.pdb
+F:\Project\Pong\UserCommand\obj\x86\Debug\UserCommand.Main.resources
+F:\Project\Pong\UserCommand\obj\x86\Debug\UserCommand.NewScrene.resources
+F:\Project\Pong\UserCommand\obj\x86\Debug\UserCommand.Start.resources
+F:\Project\Pong\UserCommand\obj\x86\Debug\UserCommand.Properties.Resources.resources
+F:\Project\Pong\UserCommand\obj\x86\Debug\UserCommand.exe
+F:\Project\Pong\UserCommand\obj\x86\Debug\UserCommand.pdb
+F:\Project\Pong\UserCommand\obj\x86\Debug\UserCommand.csproj.GenerateResource.Cache
+F:\Project\Pong\UserCommand\obj\x86\Debug\UserCommand.csprojResolveAssemblyReference.cache

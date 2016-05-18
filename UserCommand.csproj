@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6383263-C9E6-44D8-BB6E-76671D6B57CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UserCommand</RootNamespace>
+    <AssemblyName>UserCommand</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Atrribute\AttackPoint.cs" />
+    <Compile Include="Atrribute\AttackSpeed.cs" />
+    <Compile Include="Atrribute\DefensePoint.cs" />
+    <Compile Include="Atrribute\MagicAttackPoint.cs" />
+    <Compile Include="Atrribute\MagicpointMax.cs" />
+    <Compile Include="Atrribute\MagicResistPoint.cs" />
+    <Compile Include="BasicTree\Attribute.cs" />
+    <Compile Include="BasicTree\BaseAttribute.cs" />
+    <Compile Include="BasicTree\MovementSpeed.cs" />
+    <Compile Include="Command\CommandCreateLeader.cs" />
+    <Compile Include="Atrribute\HitpointMax.cs" />
+    <Compile Include="Command\CommandSelectUnitAbility.cs" />
+    <Compile Include="Quest.cs" />
+    <Compile Include="SkillCommand\SkillCommand.cs" />
+    <Compile Include="SkillCommand\SkillOwner.cs" />
+    <Compile Include="SkillRequirement\RequireAgility.cs" />
+    <Compile Include="SkillRequirement\RequireIntelligent.cs" />
+    <Compile Include="SkillRequirement\RequireItemId.cs" />
+    <Compile Include="SkillRequirement\RequireSkillId.cs" />
+    <Compile Include="SkillCommand\SkillGroup.cs" />
+    <Compile Include="SkillCommand\SkillTarget.cs" />
+    <Compile Include="Skill\ArmorMastery.cs" />
+    <Compile Include="Skill\BluntMastery.cs" />
+    <Compile Include="Skill\DoubleStrike.cs" />
+    <Compile Include="Skill\FireAura.cs" />
+    <Compile Include="Skill\IceAura.cs" />
+    <Compile Include="Skill\SkillBase.cs" />
+    <Compile Include="SkillRequirement\IRequirement.cs" />
+    <Compile Include="SkillRequirement\RequireStrength.cs" />
+    <Compile Include="Skill\SkillConst.cs" />
+    <Compile Include="Skill\StoneSkin.cs" />
+    <Compile Include="Skill\WindWalk.cs" />
+    <Compile Include="Unit\CMyClass.cs" />
+    <Compile Include="Command\CommandChooseTech.cs" />
+    <Compile Include="Command\CommandStartApplication.cs" />
+    <Compile Include="Command\CommandLoadApplication.cs" />
+    <Compile Include="Command\CommandNewApplication.cs" />
+    <Compile Include="Command\CommandCloseApplication.cs" />
+    <Compile Include="Command\CommandChooseLeader.cs" />
+    <Compile Include="Command\CommandBase.cs" />
+    <Compile Include="Command\CommandSelectLeader.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\User.cs" />
+    <Compile Include="CT\CT.cs" />
+    <Compile Include="CT\CTDataType.cs" />
+    <Compile Include="CT\CTManager.cs" />
+    <Compile Include="CT\CTRequirement.cs" />
+    <Compile Include="CT\CTRequireResource.cs" />
+    <Compile Include="CT\CTRequireTech.cs" />
+    <Compile Include="CT\CTUnlock.cs" />
+    <Compile Include="BasicTree\FinalBonus.cs" />
+    <Compile Include="BasicTree\DependantAttribute.cs" />
+    <Compile Include="Main\Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Dialog.Designer.cs">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\HeroesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\HeroesEditor.Designer.cs">
+      <DependentUpon>HeroesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\NewScrene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\NewScrene.Designer.cs">
+      <DependentUpon>NewScrene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leader\Leader.cs" />
+    <Compile Include="Map\MapFileInfo.cs" />
+    <Compile Include="Node\MgrNode.cs" />
+    <Compile Include="Node\Node.cs" />
+    <Compile Include="Player\Heroes.cs" />
+    <Compile Include="Player\Heroes_Component.cs" />
+    <Compile Include="Player\Heroes_Job.cs" />
+    <Compile Include="Player\Heroes_Race.cs" />
+    <Compile Include="Player\Heroes_State.cs" />
+    <Compile Include="Player\PlayerSettings.cs" />
+    <Compile Include="Player\MgrPlayer.cs" />
+    <Compile Include="Player\Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Leader\MgrLeader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Main\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicTree\RawBonus.cs" />
+    <Compile Include="ScreenManager.cs" />
+    <Compile Include="Unit\MgrUnit.cs" />
+    <Compile Include="Unit\TalentAbility.cs" />
+    <Compile Include="Unit\Unit.cs" />
+    <Compile Include="Unit\UnitAttribute.cs" />
+    <Compile Include="Unit\UnitAbility.cs" />
+    <EmbeddedResource Include="Main\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\NewScrene.resx">
+      <DependentUpon>NewScrene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
